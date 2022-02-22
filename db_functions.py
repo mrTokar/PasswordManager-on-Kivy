@@ -116,6 +116,14 @@ class DB:
         self.cursor.execute("DELETE FROM {0} WHERE {1} = '{2}'".format(login, "name", key))
         self.connection.commit()
 
+    
+    def delete_table(self, login: str):
+        """Полное удаление всей таблицы(пользователя). \n
+        login - нужная таблица"""
+	
+        self.cursor.execute('DELETE FROM {}'.format(login))
+        self.connection.commit()
+
 
 class DB_hash:
 
