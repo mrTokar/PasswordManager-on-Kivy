@@ -105,7 +105,7 @@ class DB:
             try:
                 self.cursor.execute(f'CREATE TABLE {self.table}({cells})')
                 self.connection.commit()
-                self.save(self.table, ["Example", "test2020@gmail.com", "123456789", "default"])
+                self.save(["Example", "test2020@gmail.com", "123456789", "default"])
             except sqlite3.OperationalError:
                 pass
 
