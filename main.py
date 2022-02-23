@@ -6,7 +6,7 @@ from kivy.properties import ObjectProperty
 from kivy.core.window import Window
 Window.size = (480, 853)
 
-from db_functions import DB
+from db import DB
 
 class Container(BoxLayout):
 
