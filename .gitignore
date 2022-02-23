@@ -1,4 +1,6 @@
 /db_source
-/sources
+/sources/data.db
+/sources/hashedpasswords.db
 /__pycache__
 /kivy_venv
+/build_venv
